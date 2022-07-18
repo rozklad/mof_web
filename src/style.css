@@ -1,0 +1,58 @@
+/* ================= */
+/* Tailwind          */
+/* ================= */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ----------------- */
+/* TWD Configuration */
+/* ----------------- */
+@layer base {
+    html {
+        font-family: 'Kaisei Tokumin', serif;
+    }
+}
+
+/* ================= */
+/* Utilities         */
+/* ================= */
+
+/* ----------------- */
+/* Hide scrollbar    */
+/* ----------------- */
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* ================= */
+/* Clarinet          */
+/* ================= */
+.clarinet {
+    position: fixed;
+    z-index: -1;
+    perspective: 100vh;
+}
+
+.clarinet-1 {
+    top: 0;
+    left: 20vw;
+    height: 45vh;
+    width: auto;
+
+    transform: rotateX(45deg) rotateZ(15deg) translateY(-200%);
+}
+
+.clarinet-2 {
+    top: 0;
+    right: 20vw;
+    height: 45vh;
+    width: auto;
+
+    transform: rotateX(45deg) rotateZ(-15deg) translateY(-200%);
+}
