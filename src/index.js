@@ -18,12 +18,18 @@ const config = {
             rotate: -15,
         },
     },
+
+    blink: {
+        max: 2.0,
+        min: 0.6,
+    },
 };
 
 /**
  * Hold selectable elements
  */
 const main = document.getElementById('main');
+const root = document.querySelector(':root');
 const clarinets = {
     1: document.querySelector('.clarinet-1'),
     2: document.querySelector('.clarinet-2'),
@@ -117,3 +123,11 @@ window.addEventListener('scroll', () => {
     transformClarinet(1, percentage);
     transformClarinet(2, percentage);
 });
+
+/**
+ * Change blinking speed every interval
+ */
+setInterval(() => {
+    const speed = (Math.random() * (config.blink.max - config.blink.min) + config.blink.min).toFixed(2);
+    root.style.setProperty('--blink', `${speed}s`);
+}, parseInt(config.blink.max) * 1000);
