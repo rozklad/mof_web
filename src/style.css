@@ -56,3 +56,12 @@ body::-webkit-scrollbar {
 
     transform: rotateX(45deg) rotateZ(-15deg) translateY(-200%);
 }
+
+#main p {
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.font {
+    transform: scale(1, 4);
+}
