@@ -60,8 +60,7 @@ body::-webkit-scrollbar {
 #main p {
     font-weight: 500;
     font-size: 50px;
+    transform: scale(1, 4);
+    padding-bottom: 80px;
 }
 
-.font {
-    transform: scale(1, 4);
-}
