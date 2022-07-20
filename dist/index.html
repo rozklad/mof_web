@@ -29,13 +29,13 @@
         <meta property="og:image" content="/og.png" />
     </head>
     <body class="bg-black">
-        <!-- Primary content of the document --> 
+        <!-- Primary content of the document -->
         <div id="main" role="main">
             <!-- menu -->
-            <div class="top-0 left-0 fixed pl-6 pt-8 text-6xl">
-                💡
-            </div>
-            <div class="text-white text-center leading-loose mx-auto max-w-6xl py-30 drop-shadow-lg selection:bg-yellow-500 selection:text-black">
+            <div class="fixed top-0 left-0 pt-8 pl-6 text-6xl">💡</div>
+            <div
+                class="max-w-6xl mx-auto leading-loose text-center text-white py-30 drop-shadow-lg selection:bg-yellow-500 selection:text-black"
+            >
                 <p>Michael Bodenmann</p>
                 <p>Vittorio Brodmann</p>
                 <p>Armen Eloyan</p>
@@ -43,31 +43,35 @@
                 <p>Fabian Marti</p>
                 <p>Barbara Signer</p>
                 <p>Roman Signer</p>
-                <br>
+                <br />
                 <p>Öffnungszeiten:</p>
                 <p>Freitag 15h - 18h</p>
                 <p>Samstag 14h - 18h — Bar ist ab 20h geöffnet</p>
                 <p>Sonntag 13h - 16h</p>
                 <p>oder nach Vereinbarung 076 425 80 23</p>
-                <br>
+                <br />
                 <p>Musik Programm:</p>
                 <p>Sa 21.5. special guest</p>
                 <p>Sa 28.5. Sven Boesiger</p>
                 <p>Sa 4.6. Bit-Tuner</p>
                 <p>Sa 11.6. special guest</p>
                 <p>Sa 18.6. special guest</p>
-                <br>
+                <br />
                 <p>Einlass ab 20h</p>
                 <p>Konzertbeginn 21h</p>
                 <p>Kollekte</p>
-                <br>
+                <br />
             </div>
         </div>
 
         <!-- Decorative elements -->
         <div id="flying" class="clarinet-wrapper" role="img" aria-label="Flying Clarinet">
-            <img src="/clar.png" alt="Clarinet" class="clarinet clarinet-1" />
-            <img src="/clar.png" alt="Clarinet" class="clarinet clarinet-2" />
+            <div class="clarinet clarinet-1">
+                <img src="/clar.png" alt="Clarinet" />
+            </div>
+            <div class="clarinet clarinet-2">
+                <img src="/clar.png" alt="Clarinet" />
+            </div>
         </div>
 
         <script src="bundle.js"></script>

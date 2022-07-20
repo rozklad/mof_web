@@ -39,6 +39,11 @@ body::-webkit-scrollbar {
     perspective: 100vh;
 }
 
+.clarinet img {
+    max-height: 100%;
+    width: auto;
+}
+
 .clarinet-1 {
     top: 0;
     left: 25vw;
@@ -55,6 +60,25 @@ body::-webkit-scrollbar {
     width: auto;
 
     transform: rotateX(45deg) rotateZ(-15deg) translateY(-200%);
+}
+
+.clarinet::before {
+    content: '';
+    width: 800px;
+    height: 800px;
+    pointer-events: none;
+    position: absolute;
+    z-index: -2;
+    display: block;
+    background: radial-gradient(circle, rgba(238, 174, 202, 0.5) 0%, rgba(0, 0, 0, 1) 60%);
+}
+
+.clarinet-1::before {
+    transform: translate(-40%, -30%);
+}
+
+.clarinet-2::before {
+    transform: translate(-40%, -30%);
 }
 
 /* ================= */
